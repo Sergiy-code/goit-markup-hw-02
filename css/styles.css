@@ -1,15 +1,110 @@
 body {
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+    color: #2E2F42;
+    
+    background-color: #FFFFFF;
+    }
+    ul{
+        list-style: none;
+    }
 
-color: #2E2F42;
+/* ---------------------------Studio Studio------------------------ */
 
-background-color: #FFFFFF;
+/* ----------------------------section hero-------------------------- */
+.hero{
+
+    background-color: #2E2F42;
 }
-ul{
-    list-style: none;
+
+.hero_title{
+
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color:#FFFFFF;
 }
 
-/* --------------------header-------------------------- */
+.hero_button{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+}
+
+.hero_button:hover,
+.hero_button:focus{
+    color: #4D5AE5;
+    background-color: #E7E9FC;
+}
+
+/* -------------------personalities webstudio-------------- */
+.description_list_item{
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.description_text{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
+
+/* ---------------------Activity title------------------- */
+.activity_title{
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+/* --------------------Team---------------------------- */
+
+.team{
+background-color: #F4F4FD;
+
+}
+
+.team_title{
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.name{
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.position{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* -----------------------Portfolio Portfolio---------------------------- */
+
+/* --------------------Header-------------------------- */
 .three-letters{
     font-size: 18px;
     line-height: 1.34;
@@ -49,6 +144,7 @@ color: red;
     color:#434455;
 }
 
+/* -----------------------Filtr portfolio------------------------- */
 
 .button-filtr{
     cursor: pointer;
@@ -65,4 +161,57 @@ color: red;
 .button-filtr:focus{
     color: #FFFFFF;
     background-color:  #4D5AE5;
+}
+
+/* ---------------------Portfolio section----------------------------- */
+
+.portfolio_list_item{
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.portfolio_list_filtr{
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* -----------------------footer------------------------------- */
+.footer{
+    background-color: #2E2F42;
+}
+.logo_link_footer{
+
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #F4F4FD;
+}
+
+.three_letters_footer{
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+}
+
+.footer_description{
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
 }
