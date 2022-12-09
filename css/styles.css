@@ -1,12 +1,23 @@
 body {
     font-family: 'Roboto', sans-serif;
-    
-    color: #2E2F42;
-    
+        
     background-color: #FFFFFF;
     }
     ul{
         list-style: none;
+    }
+
+    :root{
+
+        --brandcolor: #2E2F42;
+        --colorlight: #FFFFFF;
+        --colorsky: #4D5AE5;
+        --colordurk: #434455;
+
+        --font-secondary: "Raleway" sans-serif;
+        
+
+
     }
 
 /* ---------------------------Studio Studio------------------------ */
@@ -14,50 +25,65 @@ body {
 /* ----------------------------section hero-------------------------- */
 .hero{
 
-    background-color: #2E2F42;
+    background-color: var(--brandcolor);
 }
 
 .hero_title{
 
-    font-weight: 900;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color:#FFFFFF;
+    color: var(--colorlight);
 }
 
 .hero_button{
+    font-family: inherit;
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.04;
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    letter-spacing: 0.04em;
+    color: var(--colorlight);
+    background-color: var(--colorsky);
 }
 
 .hero_button:hover,
 .hero_button:focus{
-    color: #4D5AE5;
-    background-color: #E7E9FC;
+    color: var(--colorlight);
+    background-color: #404BBF;
 }
 
 /* -------------------personalities webstudio-------------- */
+
+.visually-hidden{
+
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1;
+}
+
 .description_list_item{
 
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brandcolor);
 }
 
 .description_text{
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--colordurk);
 }
 
 /* ---------------------Activity title------------------- */
@@ -67,7 +93,7 @@ color: #434455;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brandcolor);
 }
 
 /* --------------------Team---------------------------- */
@@ -83,7 +109,12 @@ background-color: #F4F4FD;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brandcolor);
+}
+
+.team_list_item{
+
+    background-color: #FFFFFF;
 }
 
 .name{
@@ -92,33 +123,30 @@ background-color: #F4F4FD;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brandcolor);
 }
 
 .position{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--colordurk);
 }
 /* -----------------------Portfolio Portfolio---------------------------- */
 
 /* --------------------Header-------------------------- */
 .three-letters{
-    font-size: 18px;
-    line-height: 1.34;
-    color: #4D5AE5;
+    color: var(--colorsky);
 }
 
 .logo-link{
     text-decoration: none;
-    font-family: Raleway;
-    font-weight: 700;
+    font-family: var(--font-secondary);
+    font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     Letter-spacing: 0.03em;
-    color: #2E2F42;
+    color: var(--brandcolor);
 }
 
 .header-link{
@@ -127,12 +155,12 @@ background-color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brandcolor);
 }
 
 .header-link:hover,
 .header-link:focus{
-color: red;
+color: var(--colorsky);
 }
 
 .header-contacts__link{
@@ -141,29 +169,42 @@ color: red;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:#434455;
+    color:var(--colordurk);
+    
+}
+
+.header-contacts__link:hover,
+.header-contacts__link:focus{
+color: var(--colorsky);
 }
 
 /* -----------------------Filtr portfolio------------------------- */
 
 .button-filtr{
+
+    font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--colorsky);
     background-color: #E7E9FC;
 
 }
 
 .button-filtr:hover,
 .button-filtr:focus{
-    color: #FFFFFF;
-    background-color:  #4D5AE5;
+    color: var(--colorlight);
+    background-color:  var(--colorsky);
 }
 
 /* ---------------------Portfolio section----------------------------- */
+
+.prfolio_list_link{
+
+    text-decoration: none;
+}
 
 .portfolio_list_item{
 
@@ -171,7 +212,7 @@ color: red;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brandcolor);
 }
 
 .portfolio_list_filtr{
@@ -180,18 +221,18 @@ color: red;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--colordurk);
 }
 
 /* -----------------------footer------------------------------- */
 .footer{
-    background-color: #2E2F42;
+    background-color: var(--brandcolor);
 }
 .logo_link_footer{
 
     text-decoration: none;
-    font-family: Raleway;
-    font-weight: 700;
+    font-family: var(--font-secondary);
+    font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -200,16 +241,14 @@ color: red;
 
 .three_letters_footer{
 
-    font-weight: 700;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color: #4D5AE5;
+    color: var(--colorsky);
 }
 
 .footer_description{
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
